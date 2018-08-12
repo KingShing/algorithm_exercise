@@ -11,7 +11,7 @@ package algorithm_exercise;
 public class 小朋友过桥问题 {
 
 	public static void main(String[] args) {
-		int[] arr = new int[] { 1, 2, 5, 10 };
+		int[] arr = new int[] { 1,2,3,5,6,7,10};
 		int totalTime = crossRiver(arr);
 		System.out.println(totalTime); // 17
 	}
@@ -40,6 +40,7 @@ public class 小朋友过桥问题 {
 				
 				//取1)和2)中最短的
 				fn= Math.min(fn1, fn2);
+				//更新迭代变量
 				fn_prev2 = fn_prev1;
 				fn_prev1 = fn;
 			}
